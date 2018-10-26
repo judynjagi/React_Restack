@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  left: 2%;
+  width: 60%;
+  top: 20%;
+  height: 15%;
+  margin-top: 3%;
+  margin-left: 15%;
+  background-color: whitesmoke !important;
+}
+
+span.numbers {
+  display: inline-block;
+  text-align: center;
+  margin: 0.5em;
+  padding-top: 1%;
+  border-radius: 80%;
+  width: 30px;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.selected {
+  display: inline-block;
+  text-align: center;
+  margin: 0.5em;
+  padding-top: 1%;
+  border-radius: 80%;
+  width: 30px;
+  background-color: lightgreen;
+  cursor: not-allowed;
+  border-radius: 80%;
+}
+
+.used {
+  display: inline-block;
+  text-align: center;
+  margin: 0.5em;
+  padding-top: 1%;
+  border-radius: 80%;
+  width: 30px;
+  cursor: not-allowed;
+  border-radius: 80%;
+  background-color: greenyellow;
+}
+
