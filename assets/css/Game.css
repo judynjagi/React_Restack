@@ -1,0 +1,26 @@
+.row {
+  flex-grow: 1,
+}
+
+.game-name {
+  position: relative;
+  left: 25%;
+  padding-bottom: 10px;
+}
+
+.game-card {
+  background-color: whitesmoke!important;
+  max-width: 50%;
+  left: 25%;
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.number-card {
+  background-color: whitesmoke !important;
+  max-width: 50%;
+  left: 25%;
+  position: relative;
+  padding-bottom: 15px;
+}

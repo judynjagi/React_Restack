@@ -1,0 +1,22 @@
+button.submit {
+  width: 30%;
+  padding-left: 1px;
+  background-color: white !important;
+}
+
+.success {
+  background-color: greenyellow !important;
+}
+
+.failure {
+  background-color: red !important;
+}
+
+.refresh {
+  color: blue !important;
+}
+
+.default {
+  background-color: white !important;
+  color: blue !important;
+}
