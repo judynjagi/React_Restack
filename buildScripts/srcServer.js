@@ -10,6 +10,8 @@ const port = 3000;
 const app = express();
 const compiler = webpack(webpackConfig);
 
+app.use(require('webpack-hot-middleware')(compiler));
+
 app.use(webpackMiddleware(compiler, {
   noInfo: true,
   publicPath: webpackConfig.output.publicPath

@@ -1,10 +1,12 @@
 import path from 'path';
+import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   mode: 'development',
   devtool: 'eval-source-map',
   entry: [
+    'webpack-hot-middleware/client?reload=true',
     path.resolve(__dirname, 'src/index')
   ],
   target: 'web',
@@ -18,13 +20,15 @@ export default {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: true
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
+  resolve: { extensions: ["*", ".js", ".jsx", ".html", ".css"] },
   module: {
     rules: [
       {
         use: 'babel-loader',
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/
       },
       {
