@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "10.12.0",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "prestart": "babel-node buildScripts/startScript.js",
     "start": "npm-run-all --parallel open:src security-check lint:watch test:watch",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
-    "open:src": "babel-node buildScripts/srcServer.js",
+    "open:src": "./node_modules/.bin/babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
     "test": "mocha --reporter dot buildScripts/testSetup.js \"tests/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
