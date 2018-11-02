@@ -26,4 +26,4 @@ Play Nine API requires `react and node version 10.12.0`to run
         3. You can access the app at http://localhost:3000/
 ```
 #### Hosting
-  Play Nine has been hosted here: https://reactapp-xhsdvwjmxw.now.sh/
+  Play Nine has been hosted here: https://reactapp-eiqoknexlk.now.sh/
