@@ -1,5 +1,12 @@
 button.submit {
   width: 30%;
+  left: 30% !important;
+  padding-left: 1px;
+  background-color: white !important;
+}
+
+button.submitButton {
+  width: 30%;
   padding-left: 1px;
   background-color: white !important;
 }

@@ -45,7 +45,12 @@ export class Game extends React.Component{
   state = Game.initialState()
 
   selectNumber = (selectedNumber) => {
-    if(this.state.usedNumbers.indexOf(selectedNumber) >= 0 ){ return; }
+    const {
+      usedNumbers,
+      selectedNumbers
+     } = this.state;
+
+    if(usedNumbers.indexOf(selectedNumber) >= 0  || selectedNumbers.indexOf(selectedNumber) >= 0 ){ return; }
     this.setState(prevState => ({
       answerIsCorrect: null,
       selectedNumbers: prevState.selectedNumbers.concat(selectedNumber)
