@@ -48,7 +48,7 @@ export const SubmitButton = (props) => {
         <br /><br/>
         <Button
           variant="outlined"
-          className="submit"
+          className="submitButton"
           onClick={redraw}
           disabled={redraws === 0}
         >

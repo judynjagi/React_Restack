@@ -5,12 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node buildScripts/startScript.js",
-    "start": "npm-run-all --parallel open:src security-check share lint:watch test:watch",
+    "start": "npm-run-all --parallel open:src security-check lint:watch test:watch",
     "lint": "esw webpack.config.* src buildScripts --color",
     "lint:watch": "npm run lint -- --watch",
     "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
-    "share": "lt --port 3000",
     "test": "mocha --reporter dot buildScripts/testSetup.js \"tests/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
   },

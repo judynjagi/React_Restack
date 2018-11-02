@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import "Styles/numbers";
+import "Styles/Numbers";
 
 export const Answer = (props) => {
     const { selectedNumbers, unSelectNumber } = props;
