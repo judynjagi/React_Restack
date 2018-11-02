@@ -1,17 +1,17 @@
 {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
   "plugins": [
     "@babel/plugin-proposal-class-properties",
-    ["module-resolver", {
-      "root": ["./src"],
-      "alias": {
-        "test": "./test",
-        "Components": "./src/components",
-        "Styles": "./assets/css"
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "test": "./test",
+          "Components": "./src/components",
+          "Styles": "./assets/css"
+        }
       }
-    }]
+    ]
   ]
 }

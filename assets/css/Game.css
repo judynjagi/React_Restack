@@ -1,5 +1,5 @@
 .row {
-  flex-grow: 1,
+  flex-grow: 1;
 }
 
 .game-name {
@@ -9,7 +9,7 @@
 }
 
 .game-card {
-  background-color: whitesmoke!important;
+  background-color: whitesmoke !important;
   max-width: 50%;
   left: 25%;
   position: relative;
