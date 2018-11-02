@@ -46,8 +46,9 @@ export class Game extends React.Component{
   state = Game.initialState()
 
   selectNumber = (selectedNumber) => {
-    if(this.state.selectedNumbers.indexOf(selectedNumber) >=0 ){ return; }
+    if(this.state.usedNumbers.indexOf(selectedNumber) >= 0 ){ return; }
     this.setState(prevState => ({
+      answerIsCorrect: null,
       selectedNumbers: prevState.selectedNumbers.concat(selectedNumber)
     }))
   }
@@ -121,7 +122,6 @@ export class Game extends React.Component{
       redraws,
       doneStatus,
     } = this.state;
-    const { classes } = this.props;
     return(
       <div className="row">
       <Card className="game-card">
