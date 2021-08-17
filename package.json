@@ -35,7 +35,7 @@
     "lodash": "^4.17.11",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "webpack": "^4.22.0"
+    "webpack": "^4.26.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
